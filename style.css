@@ -1,7 +1,10 @@
-/* Estilos comuns */
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* Estilos comuns */
+*{
+    font-family: "Quattrocento Sans", sans-serif;
+}
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +21,7 @@ h2 {
     color: #500050;
 }
 
-.text span {
+.text span {    
     font-size: 30px;
     color: #800080;
 }
@@ -42,21 +45,41 @@ header {
     justify-content: space-around;
 }
 
-.nav-bar ul li {
-    list-style-type: none;
-    display: inline;
-    margin-right: 20px;
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
-.nav-bar ul li a {
-    color: #fff;
-    text-decoration: none;
+.nav-bar ul {
+    
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    font-weight: 400;
+}
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+        /* Altera a direção do flex para coluna */
+        align-items: left;
+        /* Centraliza os itens */
+        gap: 1rem;
+    }
+
+    .nav-bar ul li {
+        margin-bottom: 10px;
+    }
 }
 
 /* Estilos da seção home */
 
 .background {
-    background-image: url('/imagens/background.jpg');
+    background-image: url('imagens/background.jpg');
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -67,11 +90,11 @@ header {
     text-align: justify;
 }
 
-#chamada{
+#chamada {
     text-align: center;
 }
 
-#links{
+#links {
     display: flex;
     flex-direction: column;
 }
@@ -89,15 +112,10 @@ header {
 
 /* Estilos do formulário de contato */
 
-.form-container {
-    margin-top: 50px;
-}
-
 .form-container form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
+    margin: 60px;
 }
 
 .form-container form label,
@@ -153,7 +171,7 @@ header {
 footer {
     background-color: #1965d8;
     color: #800080;
-    
+
     padding: 20px;
     text-align: center;
 }
