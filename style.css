@@ -1,0 +1,180 @@
+/* Estilos comuns */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: left;
+    color: #500050;
+}
+
+.text span {
+    font-size: 30px;
+    color: #800080;
+}
+
+/* Estilos da barra de navegação */
+
+header {
+    padding: 10px;
+    background-color: #800080;
+    color: #fff;
+}
+
+.logo {
+    height: 50px;
+    position: absolute;
+    top: 4px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos da seção home */
+
+.background {
+    background-image: url('background.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+#chamada{
+    text-align: center;
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-text {
+    width: 563px;
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    margin: 20px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* Estilos do formulário de contato */
+
+.form-container {
+    margin-top: 50px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-container form label,
+.form-container form input,
+.form-container form textarea {
+    margin-bottom: 10px;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="email"],
+.form-container form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container form input[type="submit"] {
+    background-color: #800080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form-container form input[type="submit"]:hover {
+    background-color: #0000FF;
+}
+
+/* Estilos dos botões na página de trabalhos */
+
+.container a {
+    text-decoration: none;
+}
+
+.container button {
+    background-color: #500050;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.container button:hover {
+    background-color: #0000FF;
+}
+
+footer {
+    background-color: #1965d8;
+    color: #800080;
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+}
