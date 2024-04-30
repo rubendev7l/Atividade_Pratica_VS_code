@@ -9,39 +9,40 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="imagens/logo.png" alt="Ruben" style="background: none;"></a>
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/sobre.html">SOBRE MIM</a></li>
+                        <li><a href="/portifolio.html">PORTIFÓLIO</a></li>
+                        <li><a href="formulario.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
-        <!-- logo que aparece em todos os arquivos, sempre que mudar aqui, mude em todos. -->
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="trabalhos.html">Portfólio/Links</a></li>
-                <li><a href="contato.html">Entre em Contato</a></li>
-            </ul>
-        </nav>
 
     </header>
 
-    <section id="home" class="background">
-        <div class="container-text">
-            <div class="text">
-                <h2>Olá, seja bem vindo!</h2>
-                <h1>Eu sou <span>Ruben Neto</span></h1>
-                <p>Sou Designer Gráfico e mineiro da Cidade de Sete Lagoas-MG e estou <br>em processo de
-                    transição de carreira, saiba mais navegando por aqui,<br>sinta-se a vontade.</p>
-            </div>
-        </div>
+    <section class="banner">
+        <h2>Olá, seja bem vindo!</h2>
+        <br>
+        <h1>Eu sou <span>Ruben Neto</span></h1>
+        <br>
+        <p>Sou Designer Gráfico e mineiro da Cidade de Sete Lagoas-MG e estou <br>em processo de
+            transição de carreira, saiba mais navegando por aqui,<br>sinta-se a vontade.</p>
     </section>
     <footer>
         <div class="rodape">
             Essa página foi criada para fins de estudos e entrega de trabalho
-            do meu curso de Anállise de Sistemas da Uninter. | Matéria: Ferramentas de Desenvolvimento Web - Profª. Margarete - Linguagens utilizadas: HTML, CSS e JavaScriptS
+            do meu curso de Anállise de Sistemas da Uninter. | Matéria: Ferramentas de Desenvolvimento Web - Profª.
+            Margarete - Linguagens utilizadas: HTML, CSS e JavaScriptS
         </div>
 
         <div class="redes-sociais">
@@ -56,17 +57,7 @@
             </a>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navBar = document.querySelector('.nav-bar ul');
-
-            menuToggle.addEventListener('click', function () {
-                navBar.classList.toggle('show');
-            });
-        });
-    </script>
-
+    <script src="menu.js"></script>
 </body>
 
 </html>

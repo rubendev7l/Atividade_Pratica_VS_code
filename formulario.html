@@ -5,29 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Contato</title>
+    <title>Formulário de Contato</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="imagens/logo.png" alt="Ruben" style="background: none;"></a>            
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/sobre.html">SOBRE MIM</a></li>
+                        <li><a href="/portifolio.html">PORTIFÓLIO</a></li>
+                        <li><a href="/formulario.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="trabalhos.html">Portfólio/Links</a></li>
-                <li><a href="contato.html">Entre em Contato</a></li>
-            </ul>
-        </nav>
     </header>
-    <h2 id="chamada">Entre em Contato</h2>
+
     <section class="form-container">
-            <form action="#" method="post">
+       
+        <form action="#" method="post">
+            <h2 style="text-align: center;">Entre em Contato</h2>
+            <br><br>
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" required><br>
             <label for="email">Email:</label><br>
@@ -37,7 +43,14 @@
             <input type="submit" value="Enviar">
         </form>
     </section>
+
     <footer>
+        <div class="rodape">
+            Essa página foi criada para fins de estudos e entrega de trabalho
+            do meu curso de Anállise de Sistemas da Uninter. | Matéria: Ferramentas de Desenvolvimento Web - Profª.
+            Margarete - Linguagens utilizadas: HTML, CSS e JavaScriptS
+        </div>
+
         <div class="redes-sociais">
             <a href="https://www.linkedin.com/in/ruben-neto-tecnologia/" target="_blank">
                 <img src="imagens/linkedin.png" alt="LinkedIn">
@@ -48,18 +61,9 @@
             <a href="https://wa.me/+5531987969166" target="_blank">
                 <img src="imagens/whatsapp.png" alt="WhatsApp">
             </a>
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    const menuToggle = document.querySelector('.menu-toggle');
-                    const navBar = document.querySelector('.nav-bar');
-        
-                    menuToggle.addEventListener('click', function () {
-                        navBar.classList.toggle('show');
-                    });
-                });
-            </script>
         </div>
     </footer>
+    <script src="menu.js"></script>
 </body>
 
 </html>

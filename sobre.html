@@ -9,28 +9,32 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="imagens/logo.png" alt="Ruben" style="background: none;"></a>
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="index.html"><img src="/imagens/logo.png" alt=""></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">HOME</a></li>
+                        <li><a href="/sobre.html">SOBRE MIM</a></li>
+                        <li><a href="/portifolio.html">PORTIFÓLIO</a></li>
+                        <li><a href="/formulario.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="trabalhos.html">Portfólio/Links</a></li>
-                <li><a href="contato.html">Entre em Contato</a></li>
-            </ul>
-        </nav>
     </header>
-    <div id="sobre" class="container">
+    <div class="sobre">
         <section>
             <h2>SOBRE MIM</h2>
-            <p>Sou um apaixonado por tecnologia e estudante de Tecnologia em Análise de Desenvolvimento de Sistemas.
+            <br>
+            <p>Sou um apaixonado por tecnologia e <strong>estudante de Tecnologia em Análise de Desenvolvimento de Sistemas</strong>.
                 Minha jornada profissional tem sido marcada por uma curiosidade inabalável e uma habilidade natural para
-                resolver problemas técnicos. Ao longo de minha carreira como designer gráfico autônomo, desenvolvi uma
+                resolver problemas técnicos. Ao longo de minha carreira como  <strong>designer gráfico autônomo</strong>, desenvolvi uma
                 forte base em softwares e hardwares, necessárias ao executar o meu trabalho, aprimorando assim minhas
                 habilidades com a tecnologia.
 
@@ -43,7 +47,9 @@
                 conhecimentos e minha paixão natural por resolver desafios técnicos. Sinto que agora estou pronto para
                 aprender mais e contribuir para projetos e equipes, buscando oportunidades para crescer e adquirir novos
                 conhecimentos.</p>
-                <h3 style="color: rgb(82, 25, 136);">Meus hobbies são:</h3>
+                <br>
+                <h3 style="color: #800088;">Meus hobbies são:</h3>
+                <br>
                 <ul>
                     <li>
                         Assistir séries e filmes;                    
@@ -62,16 +68,20 @@
                     </li>
                 </ul>
         </section>
+        <br><br>
         <section>
             <h2>FORMAÇÃO</h2>
+            <br>
             <ul>
                 <li>Superior de Tecnologia em Análise e Desenvolvimento de Sistemas – CENTRO UNIVERSITÁRIO
                     INTERNACIONAL UNINTER - início outubro de 2022
                     (em andamento - formatura/formação – 06/2025 a 12/2025).</li>
             </ul>
         </section>
+        <br><br>
         <section>
             <h2>EXPERIÊNCIAS PROFISSIONAIS</h2>
+            <br>
             <ul>
                 <li>Sou Designer Gráfico Autônomo e Estudante, estou em transição de profissão,
                     busco algo na área de T.I e correlatas.
@@ -103,8 +113,10 @@
                 </li>
             </ul>
         </section>
+        <br><br>
         <section>
             <h2>CURSOS COM CERTIFICADO</h2>
+            <br>
             <ul>
                 <li>
                     Segurança de Endpoint- Issued by Cisco <br>
@@ -186,8 +198,10 @@
                 </li>
             </ul>
         </section>
+        <br><br>
         <section>
             <h2>Habilidades</h2>
+            <br>
             <p>• Conhecimentos avançados de informática, sistemas, aplicativos, arquivos, pastas, planilhas,
                 processadores de texto, editores de fotos, realização de downloads, instalação, configuração manutenção
                 e atualizações de softwares e hardwares.
@@ -204,15 +218,22 @@
                 de uma nova recolocação.
             </p>
         </section>
+        <br><br>
         <section>
             <h2>Idiomas</h2>
             <ul>
                 <li>Proficiência em Inglês Básico para o Intermediário.</li>
             </ul>
         </section>
-
     </div>
+    
     <footer>
+        <div class="rodape">
+            Essa página foi criada para fins de estudos e entrega de trabalho
+            do meu curso de Anállise de Sistemas da Uninter. | Matéria: Ferramentas de Desenvolvimento Web - Profª.
+            Margarete - Linguagens utilizadas: HTML, CSS e JavaScriptS
+        </div>
+
         <div class="redes-sociais">
             <a href="https://www.linkedin.com/in/ruben-neto-tecnologia/" target="_blank">
                 <img src="imagens/linkedin.png" alt="LinkedIn">
@@ -225,16 +246,7 @@
             </a>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navBar = document.querySelector('.nav-bar');
-
-            menuToggle.addEventListener('click', function () {
-                navBar.classList.toggle('show');
-            });
-        });
-    </script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

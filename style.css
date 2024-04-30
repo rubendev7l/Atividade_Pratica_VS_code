@@ -1,174 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* Estilos comuns */
-*{
-    font-family: "Quattrocento Sans", sans-serif;
-}
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quattrocento Sans';
+}
+
+html {
+    background-color: rgba(54, 105, 172, 0.5);
+    height: 100vh;
 }
 
 .container {
-    text-align: justify;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1280px;
+    margin: auto;
 }
 
-h2 {
-    text-align: left;
-    color: #500050;
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.text span {    
-    font-size: 30px;
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem {
+    background-color: #500050;
+    padding: 20px 4%;
+}
+
+header.rolagem a {
+    color: #6698e2;
+}
+
+header.rolagem button {
+    background-color: #000;
+    color: #6698e2;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    color: #fffc;
+    height: 130vh;
+    background-image: url(imagens/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.banner h1 {
+    font-size: 2em;
+}
+
+.banner h1 span {
     color: #800080;
 }
 
-/* Estilos da barra de navegação */
-
-header {
-    min-height: 60px;
-    padding: 10px;
-    background-color: #800080;
-}
-
-.logo img{
-    max-height: 58px;
-    position: absolute;
-    margin-right: 20px;
-    margin-left: 10px;
-    padding-bottom: 4%;
-}
-
-.nav-bar {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 40px;
-}
-
-.nav-bar ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1rem;
-    padding: 5px;
-    border-radius: 5px;
-
-}
-
-.nav-bar ul {
-    
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
-    font-weight: 400;
-}
-/* Estilos para telas menores */
-@media screen and (max-width: 768px) {
-    .nav-bar ul {
-        flex-direction: column;
-        /* Altera a direção do flex para coluna */
-        align-items: center;
-        /* Centraliza os itens */
-        gap: 2rem;
-    }
-
-    .nav-bar ul li {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-/* Estilos da seção home */
-
-.background {
-    background-image: url('imagens/background.jpg');
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+/*Estilos da seção Sobre Mim*/
+.sobre {
     text-align: justify;
-}
-
-#chamada {
-    text-align: center;
-}
-
-#links {
-    display: flex;
-    flex-direction: column;
-}
-
-.container-text {
-    width: 563px;
-    display: flex;
-    justify-content: flex-start;
-    float: left;
-    margin: 20px;
-    border-radius: 10%;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin: 180px 20px 10px 20px;
     padding: 20px;
 }
 
-/* Estilos do formulário de contato */
-
-.form-container form {
-    display: flex;
-    flex-direction: column;
-    margin: 60px;
+.banner h2 {
+    text-align: left;
+    color: #1965d8;
 }
 
-.form-container form label,
-.form-container form input,
-.form-container form textarea {
-    margin-bottom: 10px;
+.links {
+    background-color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    margin: 180px 20px 10px 20px;
+    padding: 20px;
 }
 
-.form-container form input[type="text"],
-.form-container form input[type="email"],
-.form-container form textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-container form input[type="submit"] {
+button{
+    padding: 5px;
     background-color: #800080;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
-.form-container form input[type="submit"]:hover {
-    background-color: #0000FF;
-}
-
-/* Estilos dos botões na página de trabalhos */
-
-.container a {
-    text-decoration: none;
-}
-
-.container button {
-    background-color: #500050;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    text-align: center;
-}
-
-.container button:hover {
+button:hover {
     background-color: #0000FF;
 }
 
@@ -177,7 +118,8 @@ footer {
     padding: 10px;
     text-align: center;
 }
-.rodape{
+
+.rodape {
     font-size: small;
     margin-bottom: 15px;
 }
@@ -202,4 +144,48 @@ footer {
 
 .redes-sociais img:hover {
     transform: scale(1.1);
+}
+
+/* Estilos do formulário de contato */
+
+
+.form-container form{
+    background-color: #fff;
+    color: #500050;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 180px 40px 20px 40px;
+    padding: 20px;
+}
+
+
+.form-container form label,
+.form-container form input,
+.form-container form textarea {
+    margin-top: 5px;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="email"],
+.form-container form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container form input[type="submit"] {
+    background-color: #800080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form-container form input[type="submit"]:hover {
+    background-color: #6698e2;
 }
